@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 父工程坐标 -->
+    <groupId>com.zcwxdqy</groupId>
+    <artifactId>AgedApplet</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <!-- 聚合的子模块 -->
+    <modules>
+        <module>aged-applet-common</module>
+        <module>aged-applet-mapper</module>
+        <module>aged-applet-service</module>
+        <module>aged-applet-web</module>
+        <module>aged-applet-pojo</module>
+        <module>aged-applet-wxapi</module>
+    </modules>
+
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.4.RELEASE</version>
+    </parent>
+
+
+    <!-- 版本信息 -->
+    <properties>
+        <!-- JDK版本 -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <!-- 设置编码 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- 锁定版本 -->
+        <druid.version>1.2.8</druid.version>
+        <mybatis-plus.version>3.5.0</mybatis-plus.version>
+        <kaptcha.version>2.3.2</kaptcha.version>
+        <commons-io.version>2.11.0</commons-io.version>
+        <spring-context-support.version>5.0.0.RELEASE</spring-context-support.version>
+        <mail.version>1.4.7</mail.version>
+        <commons-codec.version>1.15</commons-codec.version>
+        <commons-lang3.version>3.12.0</commons-lang3.version>
+        <commons-fileupload.version>1.4</commons-fileupload.version>
+        <springfox.version>3.0.0</springfox.version>
+        <swagger-models.version>1.6.2</swagger-models.version>
+        <mapStruct.version>1.4.2.Final</mapStruct.version>
+        <captcha.version>1.6.2</captcha.version>
+        <shiro.version>1.8.0</shiro.version>
+    </properties>
+
+
+    <dependencies>
+
+        <!-- spring boot项目依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- debug阶段 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- 简化实体类 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- 热部署工具 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- 单元测试 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+
+
+
+    </dependencies>
+
+
+    <build>
+        <!-- 打包后的文件名 -->
+        <finalName>xhywblog</finalName>
+
+
+        <!-- 使用maven启动插件 -->
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+
+
+    </build>
+
+</project>

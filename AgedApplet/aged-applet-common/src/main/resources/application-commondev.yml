@@ -1,0 +1,18 @@
+
+
+# common的配置文件
+
+aged:
+  # 跨域
+  cfg:
+    cors-origins:
+      #  设置允许的域
+      - http://localhost:63342
+      - http://localhost:63341
+
+  # 图片上传位置
+  upload:
+    base-path: D:/AgedApplet/
+    upload-path: upload/
+    image-path: img/
+    video-path: video/

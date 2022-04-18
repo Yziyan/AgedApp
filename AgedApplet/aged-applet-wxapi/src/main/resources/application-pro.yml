@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/test_mybatis?serverTimezone=GMT%2B8
+
+server:
+  port: 80
+
+jk:
+  cfg:
+    cors-origins:
+      - https://www
+  upload:
+    base-path: F:/n
+    upload-path: upload/
+    image-path: img/
+    video-path: video/

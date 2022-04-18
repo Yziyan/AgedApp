@@ -1,0 +1,20 @@
+
+
+
+aged:
+  testser: service+++++++都加了吗？
+
+  # 跨域
+  cfg:
+    cors-origins:
+      - http://localhost:63342
+      - http://localhost:63341
+      - http://172.20.10.4:8080
+      - http://172.20.10.4:8081
+
+  # 图片上传位置
+  upload:
+    base-path: F:/wblog/
+    upload-path: upload/
+    image-path: img/
+    video-path: video/

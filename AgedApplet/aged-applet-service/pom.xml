@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>AgedApplet</artifactId>
+        <groupId>com.zcwxdqy</groupId>
+        <version>1.0.0</version>
+    </parent>
+
+    <!-- 业务层（service）坐标 -->
+    <artifactId>aged-applet-service</artifactId>
+    <version>1.0.0</version>
+
+    <dependencies>
+
+        <!-- mapper层 -->
+        <dependency>
+            <groupId>com.zcwxdqy</groupId>
+            <artifactId>aged-applet-mapper</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
+</project>
